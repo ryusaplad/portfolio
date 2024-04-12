@@ -1,0 +1,290 @@
+/* Root level variable declarations */
+:root {
+  --bg-color-light: #ffffff; /* Light mode background color */
+  --text-color-light: #000000; /* Light mode text color */
+  --bg-color-dark: #0d1117; /* Dark mode background color */
+  --text-color-dark: #ffffff; /* Dark mode text color */
+  --primary-color: #378c3f; /* Primary color */
+  --btn-color: #2ea043; /* Primary button color */
+  --btn-hover: #25832f; /* Primary button color on hover */
+  --card-shadow-color: rgba(0, 0, 0, 0.05); /* Card shadow color */
+}
+
+/* Dark mode variable declarations */
+[data-theme="dark"] {
+  --primary-color: #373562;
+  --secondary-color: #818cab;
+  --text-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+  --btn-color: #9a97f3;
+  --btn-hover: #736ca9;
+}
+
+/* Set background and text color for body */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Preloader Styles */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading span {
+  display: inline-block;
+  width: 0.925rem;
+  margin: 0 0.25rem;
+  height: 1rem;
+  background-color: var(--primary-color);
+  animation: beat 1s infinite;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add background for the hero */
+.hero {
+  background-color: #f5f5f5;
+  margin-bottom: 2rem;
+}
+
+[data-theme="dark"] .hero {
+  background-color: #222;
+}
+
+/* CSS for profile image */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--text-color) !important;
+}
+
+/* CSS for active navbar link */
+.nav-link.active {
+  font-weight: bold;
+}
+
+/* CSS for unclickable navbar link */
+.nav-link.unclickable {
+  pointer-events: none;
+}
+
+/* CSS for navbar toggler */
+.navbar-toggler {
+  color: var(--text-color);
+  border: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  z-index: 101;
+}
+
+/* CSS for primary button */
+.btn-primary {
+  background-color: var(--btn-color);
+  border-color: var(--btn-color);
+}
+
+/* CSS for outline primary button */
+.btn-outline-primary {
+  color: var(--btn-color);
+  border-color: var(--btn-color);
+}
+
+/* CSS for primary button on hover */
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: var(--btn-hover);
+  border-color: var(--btn-hover);
+}
+
+/* CSS for social icons */
+.social-icons a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* CSS for hero section */
+.hero {
+  padding-top: 180px;
+}
+
+/* CSS for theme switch */
+.theme-switch {
+  display: flex;
+  align-items: center;
+}
+
+/* CSS for theme switch label */
+.theme-switch-label {
+  margin-left: 0.5rem;
+}
+
+/* CSS for sections */
+#about,
+#skills,
+#contact {
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.19),
+    0 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  margin-bottom: 2rem;
+  padding: 5% 0;
+}
+
+h2,
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.project-card {
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.19),
+    0 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  margin-bottom: 5px;
+}
+
+.projectBtn:hover {
+  background-color: var(--btn-hover) !important;
+  border-color: var(--btn-hover) !important;
+  color: white !important;
+}
+
+#email-link {
+  color: inherit;
+}
+
+#email-link:hover {
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* Light mode theme variables for sections */
+[data-theme="dark"] #skills,
+[data-theme="dark"] #about,
+[data-theme="dark"] #contact,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .experience-card {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2),
+    0 2px 8px rgba(255, 255, 255, 0.19), 0 4px 16px rgba(255, 255, 255, 0.16),
+    0 8px 32px rgba(255, 255, 255, 0.13), 0 16px 64px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .projectCard {
+  background-color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .contact-card {
+  color: inherit;
+  background-color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .btn-outline-secondary {
+  color: inherit;
+  border-color: inherit;
+}
+
+/* Set color and background color for sections */
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .experience-card,
+[data-theme="light"] .project-card,
+[data-theme="light"] .experience-card,
+[data-theme="light"] .about-me-card,
+[data-theme="dark"] .about-me-card {
+  color: inherit;
+  background-color: inherit;
+}
+
+/* Animation for skills progress bar */
+@keyframes progressAnimation {
+  0% {
+    width: 0;
+  }
+}
+
+.animate-progress {
+  animation: progressAnimation 1s ease-in-out forwards;
+}
+
+/* CSS styles for fade in effect */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease-in-out forwards;
+}
+
+.project-card,
+.experience-card {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.project-card.fade-in,
+.experience-card.fade-in {
+  opacity: 1;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background-image: url("assets/img/staticmap.png");
+  background-size: cover;
+  position: relative;
+}

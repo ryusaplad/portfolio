@@ -1,31 +1,37 @@
 /* Root level variable declarations */
 :root {
-  --bg-color-light: #ffffff; /* Light mode background color */
-  --text-color-light: #000000; /* Light mode text color */
-  --bg-color-dark: #0d1117; /* Dark mode background color */
-  --text-color-dark: #ffffff; /* Dark mode text color */
+  --bg-color-light: #ffffff; /* Background color */
+  --text-color-light: #000000; /* Text color */
   --primary-color: #378c3f; /* Primary color */
+  --secondary-color: #818cab;
   --btn-color: #2ea043; /* Primary button color */
   --btn-hover: #25832f; /* Primary button color on hover */
   --card-shadow-color: rgba(0, 0, 0, 0.05); /* Card shadow color */
+  --toggle-icon-color: #ffc312; /* Toggle icon color */
+  --bg-color: #ffffff; /* Background color */
+  --text-color: #000000; /* Text color */
 }
 
 /* Dark mode variable declarations */
 [data-theme="dark"] {
-  --primary-color: #373562;
-  --secondary-color: #818cab;
-  --text-color: #e1e1ff;
   --bg-color: #161625;
+  --text-color: #e1e1ff;
+  --primary-color: #373562;
   --heading-color: #818cab;
   --btn-color: #9a97f3;
   --btn-hover: #736ca9;
+  --toggle-icon-color: #d1c6ff;
 }
+
 
 /* Set background and text color for body */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif !important;
 }
 
 /* Preloader Styles */
@@ -117,12 +123,38 @@ body {
 
 /* CSS for navbar toggler */
 .navbar-toggler {
-  color: var(--text-color);
+  background-color: transparent !important;
+  color: inherit !important;
   border: none;
   position: absolute;
   top: 0.5rem;
   right: 1rem;
   z-index: 101;
+}
+
+.navbar-toggler:focus {
+  boder: 0 !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler {
+  border: 0 !important;
+}
+
+[data-theme="light"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(46, 160, 67, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225, 225, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus {
+  transform: scale(1.1);
+}
+
+#themeIcon.dark,
+#themeIcon.light {
+  color: var(--toggle-icon-color) !important;
 }
 
 /* CSS for primary button */
@@ -169,8 +201,7 @@ body {
 
 /* CSS for sections */
 #about,
-#skills,
-#contact {
+#skills{
   position: relative;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.19),
     0 4px 16px rgba(0, 0, 0, 0.16);
@@ -186,7 +217,8 @@ h2,
   font-weight: bolder;
 }
 
-.project-card {
+.project-card,
+.education-card {
   position: relative;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.19),
     0 4px 16px rgba(0, 0, 0, 0.16);
@@ -214,6 +246,7 @@ h2,
 [data-theme="dark"] #skills,
 [data-theme="dark"] #about,
 [data-theme="dark"] #contact,
+[data-theme="dark"] .education-card,
 [data-theme="dark"] .project-card,
 [data-theme="dark"] .experience-card {
   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2),
@@ -238,10 +271,12 @@ h2,
 /* Set color and background color for sections */
 [data-theme="dark"] .project-card,
 [data-theme="dark"] .experience-card,
+[data-theme="dark"] .education-card,
+[data-theme="dark"] .about-me-card,
+[data-theme="light"] .education-card,
 [data-theme="light"] .project-card,
 [data-theme="light"] .experience-card,
-[data-theme="light"] .about-me-card,
-[data-theme="dark"] .about-me-card {
+[data-theme="light"] .about-me-card {
   color: inherit;
   background-color: inherit;
 }
@@ -254,6 +289,7 @@ h2,
 }
 
 .animate-progress {
+  background-color: var(--btn-color);
   animation: progressAnimation 1s ease-in-out forwards;
 }
 
@@ -287,4 +323,12 @@ h2,
   background-image: url("assets/img/staticmap.png");
   background-size: cover;
   position: relative;
+}
+
+.modal-header,
+.modal-body {
+  background-color: var(--bg-color);
+}
+.btn-close {
+  background-color: var(--text-color);
 }

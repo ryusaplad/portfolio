@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+vendor/
+bower_components/
+
+# IDE/Editor specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vs/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Build/Distribution
+dist/
+build/
+out/
+public/build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache
+.cache/
+.npm/
+.eslintcache
+.stylelintcache
+
+# Misc
+*.bak
+*.tmp
+*.temp
+.history/
+coverage/
+# Compressed files
+*.rar
+*.zip
+# Package management
+.pnpm-store/
+node_modules/
+.yarn/
+.yarnrc
+.npmrc

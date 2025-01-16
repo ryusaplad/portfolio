@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ryu Saplad - Full Stack Developer Portfolio | Java, PHP, Laravel, React Developer">
+    <meta name="keywords" content="Ryu Saplad, Developer, Programmer, Java, PHP, Laravel, React">
+    <meta name="author" content="Ryu Saplad">
+    <meta property="og:title" content="Ryu Saplad - Developer Portfolio">
+    <meta property="og:description" content="Full Stack Developer specializing in Java, PHP, Laravel, and React">
+    <meta property="og:type" content="website">
+    <title>Ryu Saplad | Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- GitHub Calendar CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <div class="logo" data-aos="fade-right">
+                    <a href="#" aria-label="Home">
+                        <span class="logo-text">Ryu</span>
+                        <span class="logo-dot">.</span>
+                        <span class="logo-dev">dev</span>
+                    </a>
+                </div>
+                <div class="nav-links" data-aos="fade-left">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#activities">Activities</a>
+                    <a href="#contact">Contact</a>
+                    <button id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-title-container" data-aos="fade-up">
+                <span class="greeting">👋 Hello, I'm</span>
+                <h1>Ryu Saplad</h1>
+                <div class="typed-container">
+                    <span class="typed-prefix">I'm a </span>
+                    <span class="typed-text"></span>
+                </div>
+                <p class="hero-description">Turning ideas into reality through elegant code and innovative solutions.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="primary-btn">Get in Touch</a>
+                    <a href="#projects" class="secondary-btn">View Work</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-up">
+                    <p class="lead">I'm a passionate Software Developer based in Philippines, specializing in building
+                        exceptional digital experiences.</p>
+                    <p>With a strong foundation in both frontend and backend development, I create efficient, scalable,
+                        and user-friendly applications that solve real-world problems. My approach combines technical
+                        expertise with creative problem-solving to deliver outstanding results.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Metro Manila, Caloocan City</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>changsaplad@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BS in Information Technology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Tech Stack</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-container">
+                <!-- Left side skills -->
+                <div class="skills-column" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                    <h3>Programming Languages & Frameworks</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-bootstrap"></i>
+                            <h4>Bootstrap</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS3</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-java"></i>
+                            <h4>Java</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-laravel"></i>
+                            <h4>Laravel</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <h4>MySQL</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-php"></i>
+                            <h4>PHP</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
+                        </div>
+                        <div class="skill-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                class="skill-icon">
+                                <path fill="currentColor"
+                                    d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z" />
+                            </svg>
+                            <h4>Tailwind</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side skills -->
+                <div class="skills-column" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+                    <h3>Development Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fas fa-bug"></i>
+                            <h4>DevTools</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt"></i>
+                            <h4>Git</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-github"></i>
+                            <h4>GitHub</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>Postman</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-terminal"></i>
+                            <h4>Terminal</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code"></i>
+                            <h4>VS Code</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-server"></i>
+                            <h4>XAMPP</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Featured</span>
+                            <span class="tag">Award Winner</span>
+                        </div>
+                        <h3>Request and Document Management System</h3>
+                        <p class="award">🏆 Best in Capstone Project (2023-2024)</p>
+                        <p>A comprehensive web application that revolutionizes communication between students,
+                            registrars, and teachers while providing efficient document access and management.</p>
+                        <div class="tech-stack">
+                            <span>Java/Spring Boot</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-content">
+                        <h3>NotePad Application</h3>
+                        <p>A feature-rich text editor application built with Java and Java Swing, offering modern text
+                            editing capabilities with an intuitive interface.</p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Java Swing</span>
+                            <span>File I/O</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Professional Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Programmer</h3>
+                            <span class="date">May 2024 - Present</span>
+                        </div>
+                        <p class="company">Phillogix Systems Inc.</p>
+                        <ul class="experience-list">
+                            <li>Developing and maintaining Point of Sale (POS) systems using Java/Swing</li>
+                            <li>Implementing comprehensive reporting functionality with Jasper Reports</li>
+                            <li>Building and optimizing backend control systems with Laravel/React</li>
+                            <li>Collaborating with cross-functional teams to deliver high-quality solutions</li>
+                        </ul>
+                        <div class="skills-used">
+                            <span><i class="fab fa-java"></i></span>
+                            <span><i class="fab fa-laravel"></i></span>
+                            <span><i class="fab fa-react"></i></span>
+                            <span><i class="fas fa-database"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Programmer</h3>
+                            <span class="date">July - December 2023</span>
+                        </div>
+                        <p class="company">Dr. Jose N. Rodriguez Memorial Hospital</p>
+                        <ul class="experience-list">
+                            <li>Developed comprehensive Patient Management System with EMR features</li>
+                            <li>Implemented secure appointment booking system</li>
+                            <li>Created advanced reporting system for patient statistics</li>
+                            <li>Optimized database performance and query execution</li>
+                        </ul>
+                        <div class="skills-used">
+                            <span><i class="fab fa-php"></i></span>
+                            <span><i class="fab fa-laravel"></i></span>
+                            <span><i class="fab fa-js"></i></span>
+                            <span><i class="fas fa-database"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Freelance Developer</h3>
+                            <span class="date">2020 - 2024</span>
+                        </div>
+                        <p class="company">Self-Employed</p>
+                        <ul class="experience-list">
+                            <li>Developed custom management systems for various clients</li>
+                            <li>Provided technical consultation and support services</li>
+                            <li>Implemented responsive web designs and applications</li>
+                            <li>Managed project timelines and client communications</li>
+                        </ul>
+                        <div class="skills-used">
+                            <span><i class="fab fa-php"></i></span>
+                            <span><i class="fab fa-js"></i></span>
+                            <span><i class="fab fa-bootstrap"></i></span>
+                            <span><i class="fas fa-database"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>GitHub Activities</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="activities-content" data-aos="fade-up">
+                <div class="github-calendar">
+                    <!-- Loading stuff -->
+                    <div class="calendar-loading">
+                        <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif"
+                            alt="Loading...">
+                    </div>
+                </div>
+                <div class="github-stats" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fas fa-code-branch"></i>
+                            <div class="stat-info">
+                                <h4>Total Repositories</h4>
+                                <span id="repo-count">Loading...</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-star"></i>
+                            <div class="stat-info">
+                                <h4>Total Stars</h4>
+                                <span id="stars-count">Loading...</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-code"></i>
+                            <div class="stat-info">
+                                <h4>Total Commits</h4>
+                                <span id="commits-count">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text" data-aos="fade-up">
+                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a
+                        question or just want to say hi, feel free to reach out!</p>
+                </div>
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Metro Manila, Caloocan City</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:changsaplad@gmail.com">changsaplad@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <a href="tel:+1234567890">+63 991 752 9591</a>
+                    </div>
+                </div>
+                <div class="social-links-large" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://github.com/ryusaplad" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/ryusaplad" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:changsaplad@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ryu Saplad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/github-stats.js"></script>
+</body>
+
+</html>
